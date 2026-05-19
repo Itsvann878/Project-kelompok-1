@@ -1,5 +1,6 @@
 <?php
 include "header.php"; // Menyertakan header yang sudah dibuat
+include "inc.koneksi.php"; // Menyertakan koneksi database
 ?>
 <?php
             // Logika sistem dinamis menggunakan parameter URL
