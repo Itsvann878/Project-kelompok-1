@@ -1,5 +1,5 @@
 <?php
-{
+
     class Connection
 {
     private $host = "localhost";
@@ -15,5 +15,4 @@
         $this->connection = $conn;
         }
     }
-}
  ?>
