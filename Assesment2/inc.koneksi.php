@@ -1,6 +1,6 @@
 <?php
-
-class Connection
+{
+    class Connection
 {
     private $host = "localhost";
     private $struser = "root";
@@ -15,5 +15,5 @@ class Connection
         $this->connection = $conn;
         }
     }
-
-    ?>
+}
+ ?>
