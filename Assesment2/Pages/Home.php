@@ -7,6 +7,9 @@
             <marquee behavior="scroll" direction="left">
                 Tentang Kehilangan, Pencarian, Dan Keberanian Untuk Kembali Pulang.
             </marquee>
+            <marquee behavior="scroll" direction="right">
+                Saksikan Kisah Epik Yang Menggugah Jiwa, Hanya Di Tepi Waktu Teater!
+            </marquee>
         </p>
         <div class="mt-4">
             <a href="#" class="btn btn-primary btn-lg rounded-pill me-3">View Season</a>
