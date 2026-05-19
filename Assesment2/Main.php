@@ -20,6 +20,18 @@ include "inc.koneksi.php"; // Menyertakan koneksi database
                         // Jika Anda punya file contact.php di folder Pages
                         include "Pages/Contact.php";
                         break;
+                    case 'employee':
+                        // Jika Anda punya file employee.php di folder Pages
+                        include "Pages/employee.php";
+                        break;
+                    case 'employeelist':
+                        // Jika Anda punya file employeelist.php di folder Pages        
+                        include "Pages/employeelist.php";
+                        break;
+                    case 'deleteemployee':
+                        // Jika Anda punya file deleteemployee.php di folder Pages
+                        include "Pages/deleteemployee.php";
+                        break;
                     default:
                         echo "
                         <div class='alert alert-danger text-center'>

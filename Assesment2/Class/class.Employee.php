@@ -19,7 +19,7 @@ public function __get($atribute) {
 
 public function AddEmployee(){
     $sql = "INSERT INTO employee (ssn, fname, address)
-            VALUES ('$this->ssn', '$this->fname’, '$this->address')";
+            VALUES ('$this->ssn', '$this->fname', '$this->address')";
             $this->hasil = mysqli_query($this->connection, $sql);
 
             if ($this->hasil)
