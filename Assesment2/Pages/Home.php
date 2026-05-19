@@ -11,8 +11,7 @@
                 Saksikan Kisah Epik Yang Menggugah Jiwa, Hanya Di Tepi Waktu Teater!
             </marquee>
         </p>
-        <p>PANTEK</p>
-        <p>SAYA AKAN LAWAN</p>
+        
         <div class="mt-4">
             <a href="#" class="btn btn-primary btn-lg rounded-pill me-3">View Season</a>
             <a href="#" class="btn btn-outline-light btn-lg rounded-pill">View Trailer</a>
