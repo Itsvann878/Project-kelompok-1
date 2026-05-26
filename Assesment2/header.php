@@ -64,6 +64,7 @@
                 <li class="nav-item"><a class="nav-link" href="Main.php?Pages=About">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="Main.php?Pages=Contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="Main.php?Pages=employeelist">Employee List</a></li>
+                <li class="nav-item"><a class="nav-link" href="Main.php?Pages=employeeproject">Employee Project</a></li>
             </ul>
         </div>
         <a href="#" class="btn btn-info-tiket px-4">Info Tiket</a>

@@ -4,7 +4,7 @@
         <h1 class="display-3 font-serif italic">"Hamba Sang Maha Cahaya"</h1>
         <p class="lead mx-auto" style="max-width: 700px;">
             Sebuah Pertunjukan Teater Reflektif Yang Menghadirkan Perjalanan Batin Manusia, 
-            <marquee behavior="scroll" direction="left">
+            <marquee behavior="scroll" direction="left" >
                 Tentang Kehilangan, Pencarian, Dan Keberanian Untuk Kembali Pulang.
             </marquee>
             <marquee behavior="scroll" direction="right">
