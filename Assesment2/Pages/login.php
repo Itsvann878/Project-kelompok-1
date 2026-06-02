@@ -3,7 +3,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-require_once 'class.User.php';
+require_once('./class/class.User.php');
 
 if (isset($_POST['btnLogin'])){
 
