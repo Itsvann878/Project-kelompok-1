@@ -25,11 +25,11 @@ if (isset($_POST['btnLogin'])){
             echo "<script>alert('Login Berhasil!');</script>";
 
             if ($objUser->role == 'employee') {
-                echo "<script>window.location.href = 'employee.php';</script>";
+                echo "<script>window.location.href = 'dashboardemployee.php';</script>";
             } else if ($objUser->role == 'admin') {
-                echo "<script>window.location.href = 'admin.php';</script>";
+                echo "<script>window.location.href = 'dashboardadmin.php';</script>";
             } else if ($objUser->role == 'manager') {
-                echo "<script>window.location.href = 'manager.php';</script>";
+                echo "<script>window.location.href = 'Main.php?Pages=manager.php';</script>";
             }
             
         } else {
