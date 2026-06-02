@@ -1,12 +1,10 @@
 <?php
-// Memulai session di awal lebih aman
 if (!isset($_SESSION)) {
     session_start();
 }
 
 require_once 'class.user.php';
 
-// Disarankan mengecek tombol submit (btnLogin) yang ditekan
 if (isset($_POST['btnLogin'])){
 
     $email = $_POST['email'];
@@ -14,7 +12,6 @@ if (isset($_POST['btnLogin'])){
     $objUser = new User();
     $objUser->ValidateEmail($email);
 
-    // Perbaikan 1: Menambahkan '$' pada objUser
     if ($objUser->hasil) {
         
         $ismatch = password_verify($password, $objUser->password);
@@ -36,12 +33,10 @@ if (isset($_POST['btnLogin'])){
             }
             
         } else {
-            // Perbaikan 2: Memperbaiki posisi blok 'else' untuk password salah
             echo "<script>alert('Password Salah!');</script>";
         }
         
     } else {
-        // Perbaikan 2: Memperbaiki posisi blok 'else' untuk email tidak ditemukan
         echo "<script>alert('Email Tidak Ditemukan!');</script>";
     }
 }
