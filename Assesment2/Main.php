@@ -48,6 +48,9 @@ include "inc.koneksi.php";
                     case 'register' :
                         include "Pages/register.php";
                         break;
+                    case 'login' :
+                        include "Pages/login.php";
+                        break;
                     default:
                         echo "
                         <div class='alert alert-danger text-center'>
