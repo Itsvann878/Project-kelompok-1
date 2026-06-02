@@ -1,5 +1,4 @@
 <?php
-// require_once tetap seperti ini karena dipanggil via main.php yang sejajar dengan folder class
 require_once('./class/class.User.php');
 
 if (isset($_POST['btnSubmit'])) {
@@ -20,7 +19,6 @@ if (isset($_POST['btnSubmit'])) {
 
         if ($objUser->hasil) {
             echo "<script>alert('Registrasi berhasil');</script>";
-            // Redirect disesuaikan dengan parameter Pages di main.php
             echo "<script>window.location='main.php?Pages=login';</script>";
         }
     }

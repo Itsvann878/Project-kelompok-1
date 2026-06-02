@@ -45,6 +45,9 @@ include "inc.koneksi.php";
                     case 'deleteemployeeproject':
                         include "Pages/deleteeemployeeproject.php";
                         break;
+                    case 'register' :
+                        include "Pages/register.php";
+                        break;
                     default:
                         echo "
                         <div class='alert alert-danger text-center'>
