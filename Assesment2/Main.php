@@ -1,4 +1,9 @@
 <?php
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 include "header.php"; 
 include "inc.koneksi.php"; 
 ?>

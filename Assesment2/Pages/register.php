@@ -1,4 +1,5 @@
 <?php
+// require_once tetap seperti ini karena dipanggil via main.php yang sejajar dengan folder class
 require_once('./class/class.User.php');
 
 if (isset($_POST['btnSubmit'])) {
@@ -19,7 +20,8 @@ if (isset($_POST['btnSubmit'])) {
 
         if ($objUser->hasil) {
             echo "<script>alert('Registrasi berhasil');</script>";
-            echo "<script>window.location='index.php?p=login';</script>";
+            // Redirect disesuaikan dengan parameter Pages di main.php
+            echo "<script>window.location='main.php?Pages=login';</script>";
         }
     }
 }
@@ -29,8 +31,8 @@ if (isset($_POST['btnSubmit'])) {
 <form action="" method="post">
     <table class="table" border="0">
         <tr>
-            <td>Email</td>
-            <td>:</td>
+            <td width="20%">Email</td>
+            <td width="2%">:</td>
             <td>
                 <input type="email" name="email" id="email" class="form-control" maxlength="30" required>
             </td>
@@ -54,7 +56,7 @@ if (isset($_POST['btnSubmit'])) {
             <td></td>
             <td>
                 <input type="submit" class="btn btn-primary" value="Register" name="btnSubmit">
-                <a href="index.php" class="btn btn-danger">Cancel</a>
+                <a href="main.php" class="btn btn-danger">Cancel</a>
             </td>
         </tr>
     </table>
