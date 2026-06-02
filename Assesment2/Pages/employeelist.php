@@ -1,7 +1,7 @@
 <h4 class="title">
     <span class="text"><strong>Employee List</strong></span>
 </h4>
-<a class="btn btn-primary" href="Main.php?Pages=employee">Add</a>
+<a class="btn btn-primary" href="dashboardadmin.php?Pages=employee">Add</a>
 
 <table class="table table-bordered">
     <tr>
@@ -28,8 +28,8 @@ if(count($arrayResult) == 0){
         echo '<td>'.$dataEmployee->fname.'</td>';
         echo '<td>'.$dataEmployee->address.'</td>';
         echo '<td>
-                <a class="btn btn-warning" href="Main.php?Pages=employee&ssn='.$dataEmployee->ssn.'"> Edit </a> |
-                <a class="btn btn-danger" href="Main.php?Pages=deleteemployee&ssn='.$dataEmployee->ssn.'" onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')"> Delete </a>
+                <a class="btn btn-warning" href="dashboardadmin.php?Pages=employee&ssn='.$dataEmployee->ssn.'"> Edit </a> |
+                <a class="btn btn-danger" href="dashboardadmin.php?Pages=deleteemployee&ssn='.$dataEmployee->ssn.'" onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')"> Delete </a>
               </td>';
         echo '</tr>';
         $no++;
