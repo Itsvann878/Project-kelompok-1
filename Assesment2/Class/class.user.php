@@ -51,5 +51,11 @@ class User extends Connection {
             $this->role     = $data['role'];
         } 
     }
+
+    // Method khusus untuk Admin
+    public function ShowAllUsers() {
+        $sql = "SELECT userid, email, name, role FROM user ORDER BY role ASC";
+        return mysqli_query($this->connection, $sql);
+    }
 }
 ?>
