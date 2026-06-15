@@ -34,8 +34,9 @@ if (isset($_POST['btnBeli'])) {
             <body>
                 <h2>✅ Pembelian Tiket Berhasil!</h2>
                 <p>Halo <b>{$_SESSION['name']}</b>,</p>
-                <p>Terima kasih telah membeli tiket untuk acara <b>apaaja</b>. Berikut detail pemesanan Anda:</p>
+                <p>Terima kasih telah membeli tiket untuk acara <b>{$data_price['nama_acara']}</b>. Berikut detail pemesanan Anda:</p>
                 <table border='0' cellpadding='8'>
+                    <tr><td><b>Nama Acara</b></td><td>: {$data_price['nama_acara']}</td></tr>
                     <tr><td><b>Nama Pembeli</b></td><td>: {$_SESSION['name']}</td></tr>
                     <tr><td><b>Jumlah Tiket</b></td><td>: $jumlah</td></tr>
                     <tr><td><b>Total Harga</b></td><td>: Rp " . number_format($total_harga, 0, ',', '.') . "</td></tr>
