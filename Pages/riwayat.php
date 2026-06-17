@@ -41,7 +41,7 @@ $result = $objTrx->GetUserHistory($userid_login);
                                     </p>
                                     <div class="pt-2 border-top border-secondary border-opacity-25 mt-2 d-flex justify-content-between align-items-center">
                                         <small class="text-secondary">Metode: <?php echo strtoupper($row['metode_bayar']); ?></small>
-                                        <span class="text-success small"><i class="bi bi-check-circle-fill"></i> Sukses</span>
+                                        <span class="text-success small"><i class="bi bi-check-circle-fill"></i><?php echo $row['status']; ?></span>
                                     </div>
                                 </div>
                             </div>

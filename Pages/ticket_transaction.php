@@ -49,21 +49,13 @@ if (!$data) {
                                     <input type="text" class="form-control bg-dark text-white border-secondary" value="<?php echo $_SESSION['name']; ?>" readonly>
                                 </div>
 
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <label for="jumlah_tiket" class="form-label small text-secondary">Jumlah Tiket</label>
                                     <input type="number" name="jumlah_tiket" id="jumlah_tiket" class="form-control bg-dark text-white border-secondary" min="1" max="10" value="1" required>
                                 </div>
 
-                                <div class="mb-4">
-                                    <label for="metode" class="form-label small text-secondary">Metode Pembayaran</label>
-                                    <select name="metode" id="metode" class="form-select bg-dark text-white border-secondary">
-                                        <option value="Transfer Bank">Transfer Bank (BCA/Mandiri)</option>
-                                        <option value="QRIS">QRIS / E-Wallet</option>
-                                    </select>
-                                </div>
-
                                 <div class="d-grid gap-2">
-                                    <button type="submit" name="btnBeli" class="btn btn-info-tiket py-2 fw-bold">Konfirmasi Pembayaran</button>
+                                    <button type="submit" name="btnBeli" class="btn btn-info-tiket py-2 fw-bold">Lanjut ke Pembayaran</button>
                                     <a href="Main.php?Pages=Produk" class="btn btn-outline-light py-2">Kembali Pilih Tiket</a>
                                 </div>
                             </form>

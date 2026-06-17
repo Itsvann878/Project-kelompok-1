@@ -237,6 +237,7 @@ $action = isset($_GET['Action']) ? $_GET['Action'] : (isset($_GET['action']) ? $
                                 <th>Jumlah</th>
                                 <th>Total Harga</th>
                                 <th>Metode</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -249,6 +250,7 @@ $action = isset($_GET['Action']) ? $_GET['Action'] : (isset($_GET['action']) ? $
                                 <td><?php echo $row['jumlah']; ?> Tiket</td>
                                 <td>Rp <?php echo number_format($row['total_harga'], 0, ',', '.'); ?></td>
                                 <td><span class="badge bg-secondary opacity-75"><?php echo strtoupper($row['metode_bayar']); ?></span></td>
+                                <td><?php echo $row['status']; ?></td>
                             </tr>
                             <?php endwhile; ?>
                         </tbody>
