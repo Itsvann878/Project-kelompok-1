@@ -11,3 +11,15 @@ SUKSES: Email berhasil dikirim!
 Data ditemukan. Mencoba kirim ke email: irvanadr8@gmail.com 
 SUKSES: Email berhasil dikirim!
 
+[2026-06-24 06:14:40] Memulai proses kirim email untuk ID: 31 
+Data ditemukan. Mencoba kirim ke email: kianabdul415@gmail.com 
+SUKSES: Email berhasil dikirim!
+
+[2026-06-24 06:16:43] Memulai proses kirim email untuk ID: 32 
+Data ditemukan. Mencoba kirim ke email: kianabdul415@gmail.com 
+SUKSES: Email berhasil dikirim!
+
+[2026-06-24 06:34:15] Memulai proses kirim email untuk ID: 33 
+Data ditemukan. Mencoba kirim ke email: kianabdul415@gmail.com 
+SUKSES: Email berhasil dikirim!
+

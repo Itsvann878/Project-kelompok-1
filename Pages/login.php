@@ -22,7 +22,7 @@ if (isset($_POST['btnLogin'])){
 
             // Logika Redirection Berdasarkan Role
             if ($_SESSION['role'] == 'admin') {
-                echo "<script>window.location.href = 'Main.php?Pages=dashboardAdmin';</script>";
+                echo "<script>window.location.href = 'dashboardAdmin.php';</script>";
             } else {
                 echo "<script>window.location.href = 'Main.php?Pages=Home';</script>";
             }

@@ -62,5 +62,29 @@ class User extends Connection {
         $result = mysqli_query($this->connection, $sql);
         return $result;
     }
+
+    public function UpdateUser($userid, $nama, $email, $role) {
+        // Proteksi input agar aman saat masuk ke database
+        $id = mysqli_real_escape_string($this->connection, $userid);
+        $n  = mysqli_real_escape_string($this->connection, $nama);
+        $e  = mysqli_real_escape_string($this->connection, $email);
+        $r  = mysqli_real_escape_string($this->connection, $role);
+
+        $sql = "UPDATE user SET 
+                name = '$n', 
+                email = '$e', 
+                role = '$r' 
+                WHERE userid = '$id'";
+                
+        return mysqli_query($this->connection, $sql);
+    }
+
+    // Method untuk menghapus data user (Admin Only)
+    public function DeleteUser($userid) {
+        $id = mysqli_real_escape_string($this->connection, $userid);
+        
+        $sql = "DELETE FROM user WHERE userid = '$id'";
+        return mysqli_query($this->connection, $sql);
+    }
 }
 ?>

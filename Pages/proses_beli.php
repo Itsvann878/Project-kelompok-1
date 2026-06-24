@@ -8,7 +8,7 @@ require_once dirname(__FILE__).'/../vendor/autoload.php';
 
 // Konfigurasi Midtrans
 // PENTING: Jaga kerahasiaan Server Key ini!
-\Midtrans\Config::$serverKey = 'Masukan SEVER KEY MIDTRANS';
+\Midtrans\Config::$serverKey = 'masukan server key midtrans';
 \Midtrans\Config::$isProduction = false; // Set true jika sudah live
 \Midtrans\Config::$isSanitized = true;
 \Midtrans\Config::$is3ds = true;
@@ -74,7 +74,7 @@ if (isset($_POST['btnBeli'])) {
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Menunggu Pembayaran...</title>
-                <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="masukan CLIENT KEY MIDTRANS"></script>
+                <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="MASUKAN CLIENKEY MIDTRANS"></script>
                 <style>
                     body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
                     .btn-pay { padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px; }

@@ -6,7 +6,7 @@ require_once dirname(__FILE__).'/../Class/class.Produk.php';
 require_once dirname(__FILE__).'/../Class/class.Mail.php';
 
 // Konfigurasi Midtrans
-\Midtrans\Config::$serverKey = 'masukan severkey midtrans';
+\Midtrans\Config::$serverKey = 'MASUKAN SEVER KEY MIDTRANS';
 \Midtrans\Config::$isProduction = false;
 
 // 1. Terima Notifikasi dari Midtrans
