@@ -30,6 +30,9 @@ include "inc.koneksi.php";
             case 'Contact':
                 include "Pages/Contact.php";
                 break;
+            case 'Gallery':
+                include "Pages/Gallery.php";
+                break;
             case 'Produk':
                 include "Pages/Produk.php";
                 break;
