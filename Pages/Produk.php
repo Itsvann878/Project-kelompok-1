@@ -69,15 +69,23 @@ $result = $objProduk->ShowAllProduk();
                                             <span class="fw-semibold"><i class="bi bi-clock me-2 text-info"></i><?php echo date('H:i', strtotime($row['waktu'])); ?> WIB</span>
                                         </div>
                                     </div>
-                                    
-                                    <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-outline-info px-4 py-2 fw-bold" 
+
+                                    <!-- <button type="button" class="btn btn-outline-info px-4 py-2 fw-bold" 
                                             data-bs-toggle="modal" data-bs-target="#detailModal<?php echo $row['id_produk']; ?>">
-                                        <i class="bi bi-info-circle me-2"></i>Detail Event
-                                    </button>
-                                    <a href="Main.php?Pages=ticket&id=<?php echo $row['id_produk']; ?>" 
-                                    class="btn btn-info-tiket px-5 py-2 fw-bold">Beli Tiket</a>
-                                </div>
+                                        <i class="bi bi-info-circle me-2"></i>Detail Event -->
+
+                                    <div class="d-flex gap-2">
+                                    <?php 
+                                    if (isset($_SESSION['userid'])) { 
+                                    ?>
+                                        <a href="Main.php?Pages=ticket&id=<?php echo $row['id_produk']; ?>" 
+                                        class="btn btn-info-tiket px-5 py-2 fw-bold">Beli Tiket</a>
+                                    <?php } else { ?>
+                                        <a href="javascript:void(0)" onclick="alert('Silakan login terlebih dahulu untuk membeli tiket!'); window.location.href='Main.php?Pages=login';" 
+                                        class="btn btn-info-tiket px-5 py-2 fw-bold">Beli Tiket</a>
+                                    <?php } ?>
+
+                                    </div>
 
 
                                     

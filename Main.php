@@ -27,9 +27,6 @@ include "inc.koneksi.php";
             case 'About':
                 include "Pages/About.php";
                 break;
-            case 'Contact':
-                include "Pages/Contact.php";
-                break;
             case 'Gallery':
                 include "Pages/Gallery.php";
                 break;
@@ -50,28 +47,6 @@ include "inc.koneksi.php";
                 break;
             case 'riwayat':
                 include "Pages/riwayat.php";
-                break;
-
-            // --- Manajemen Karyawan (Admin Only) ---
-            case 'employee':
-                include "Pages/employee.php";
-                break;
-            case 'employeelist':     
-                include "Pages/employeelist.php";
-                break;
-            case 'deleteemployee':
-                include "Pages/deleteemployee.php";
-                break;
-            
-            // --- Manajemen Projek (Admin/Employee) ---
-            case 'employeeproject':
-                include "Pages/employeeproject.php";
-                break;
-            case 'employeeprojectlist':     
-                include "Pages/employeeprojectlist.php";
-                break;
-            case 'deleteemployeeproject':
-                include "Pages/deleteeemployeeproject.php";
                 break;
             
             // --- Autentikasi ---
