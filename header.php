@@ -55,9 +55,9 @@
 
         /* Tombol Info Tiket */
         .btn-info-tiket { 
-            border-radius: 20px; 
-            background-color: #007bff; 
-            color: white; 
+            border-radius: 20px !important;
+            background-color: #007bff !important;
+            color: white !important;
             transition: 0.3s;
         }
 
